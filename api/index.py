@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify, send_file
-import requests
 import os
 
 app = Flask(__name__)
