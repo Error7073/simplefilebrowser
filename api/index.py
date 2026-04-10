@@ -20,7 +20,7 @@ def display_files(directory: str, base_path=""):
 
 @app.route("/", methods=["GET"])
 def start_page():
-    return display_files("Files")
+    return display_files("/")
 
 @app.route("/Files/<path:filename>", methods=["GET"])
 def serve(filename):
